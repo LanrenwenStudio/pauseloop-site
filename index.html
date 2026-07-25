@@ -49,17 +49,49 @@
       <div class="shell hero-copy reveal">
         <p class="eyebrow" data-i18n="hero.eyebrow">A quieter rhythm for macOS</p>
         <h1 data-i18n-html="hero.title">Focus has a pulse.<br><em>So should rest.</em></h1>
-        <p class="hero-lede" data-i18n="hero.lede">PauseLoop keeps your work moving, then covers every display with a calm, unmistakable break when it is time to look away.</p>
-        <div class="hero-actions">
-          <a class="store-button" href="macappstore://itunes.apple.com/app/id6790401487?mt=12&amp;l=us" data-app-store-link>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.7 12.9c0-3.2 2.6-4.8 2.7-4.9a5.8 5.8 0 0 0-4.5-2.4c-1.9-.2-3.8 1.1-4.7 1.1-.9 0-2.4-1.1-4-1-2 .1-3.9 1.2-5 3-2.1 3.6-.5 9 1.5 12 1 1.5 2.2 3.1 3.8 3 1.5-.1 2.1-1 4-1 1.8 0 2.4 1 4 1 1.7 0 2.8-1.5 3.8-3a13 13 0 0 0 1.7-3.5 5.2 5.2 0 0 1-3.3-4.3ZM15.7 3.6A5.2 5.2 0 0 0 17 0a5.3 5.3 0 0 0-3.4 1.8 4.9 4.9 0 0 0-1.3 3.5c1.3.1 2.6-.6 3.4-1.7Z"/></svg>
-            <span><small data-i18n="store.available">Available on the</small><strong>Mac App Store</strong></span>
-          </a>
-          <a class="quiet-link" href="#experience"><span data-i18n="hero.see">See how it feels</span><span aria-hidden="true">↓</span></a>
-          <a class="quiet-link" href="https://github.com/KevoraLabs/homebrew-apps/releases/download/pause-loop-v1.0/pause-loop-1.0.dmg"><span data-i18n="hero.direct">Direct download</span></a>
+        <p class="hero-lede" data-i18n="hero.lede">一款极简的 Mac 全屏休息提醒软件，到了时间自动覆盖多显示器，帮你定时放下工作、保护视力与健康。</p>
+        <!-- Download & Install Actions Group -->
+        <div class="hero-cta-group">
+          <!-- Main Buttons Row: App Store + Direct DMG -->
+          <div class="hero-buttons-row">
+            <a class="store-button" href="macappstore://itunes.apple.com/app/id6790401487?mt=12&amp;l=us" data-app-store-link>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.7 12.9c0-3.2 2.6-4.8 2.7-4.9a5.8 5.8 0 0 0-4.5-2.4c-1.9-.2-3.8 1.1-4.7 1.1-.9 0-2.4-1.1-4-1-2 .1-3.9 1.2-5 3-2.1 3.6-.5 9 1.5 12 1 1.5 2.2 3.1 3.8 3 1.5-.1 2.1-1 4-1 1.8 0 2.4 1 4 1 1.7 0 2.8-1.5 3.8-3a13 13 0 0 0 1.7-3.5 5.2 5.2 0 0 1-3.3-4.3ZM15.7 3.6A5.2 5.2 0 0 0 17 0a5.3 5.3 0 0 0-3.4 1.8 4.9 4.9 0 0 0-1.3 3.5c1.3.1 2.6-.6 3.4-1.7Z"/></svg>
+              <span><small data-i18n="store.available">Available on the</small><strong>Mac App Store</strong></span>
+            </a>
+
+            <a class="dmg-button" href="https://github.com/KevoraLabs/homebrew-apps/releases/download/pause-loop-v1.0/pause-loop-1.0.dmg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span data-i18n="hero.direct">DMG 直链下载</span>
+            </a>
+          </div>
+
+          <!-- Homebrew Terminal Bar -->
+          <div class="hero-homebrew-bar">
+            <span class="brew-tag">🍺 Homebrew</span>
+            <button type="button" class="brew-code-pill" data-copy="brew tap KevoraLabs/apps && brew install --cask pause-loop" aria-label="Copy Homebrew Command">
+              <code>brew tap KevoraLabs/apps && brew install --cask pause-loop</code>
+              <svg class="copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span class="copy-hint" data-i18n="install.copy">Copy</span>
+            </button>
+          </div>
         </div>
-        <p class="requirements" data-i18n="hero.requirements">Native for macOS 14 and later · No account required</p>
-        <p class="hero-homebrew"><span data-i18n="hero.homebrewLabel">Or install via Homebrew:</span><a href="#install" class="homebrew-inline-link"><code>brew tap KevoraLabs/apps && brew install --cask pause-loop</code> →</a></p>
+
+        <!-- Footer Meta & Preview Scroll Indicator -->
+        <div class="hero-footer-meta">
+          <span class="requirements" data-i18n="hero.requirements">Native for macOS 14 and later · No account required</span>
+          <span class="meta-dot">·</span>
+          <a class="preview-scroll-link" href="#experience">
+            <span data-i18n="hero.see">See how it feels</span>
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
       </div>
 
       <div class="shell hero-product reveal">
