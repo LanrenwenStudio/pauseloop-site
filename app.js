@@ -105,6 +105,29 @@
   window.addEventListener("resize", updateScrollEffects);
   updateScrollEffects();
 
+  document.querySelectorAll("[data-copy]").forEach((button) => {
+    button.addEventListener("click", async () => {
+      const textToCopy = button.dataset.copy;
+      try {
+        await navigator.clipboard.writeText(textToCopy);
+        const textSpan = button.querySelector('[data-i18n="install.copy"]') || button.querySelector("span");
+        if (textSpan) {
+          const originalText = textSpan.textContent;
+          const dictionary = translations[activeLocale] || translations["en-US"];
+          const copiedText = dictionary["install.copied"] || "Copied!";
+          textSpan.textContent = copiedText;
+          button.classList.add("copied");
+          setTimeout(() => {
+            textSpan.textContent = originalText;
+            button.classList.remove("copied");
+          }, 2000);
+        }
+      } catch (err) {
+        console.error("Failed to copy command:", err);
+      }
+    });
+  });
+
   const savedLocale = localStorage.getItem("pauseloop-locale");
   translatePage(savedLocale || browserLocale);
 })();

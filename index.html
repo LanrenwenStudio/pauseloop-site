@@ -26,6 +26,7 @@
         <a href="#rhythm" data-i18n="nav.rhythm">Rhythm</a>
         <a href="#experience" data-i18n="nav.experience">Experience</a>
         <a href="#details" data-i18n="nav.details">Details</a>
+        <a href="#install" data-i18n="nav.install">Homebrew</a>
       </nav>
       <div class="nav-actions">
         <label class="language-control">
@@ -56,10 +57,10 @@
             <span><small data-i18n="store.available">Available on the</small><strong>Mac App Store</strong></span>
           </a>
           <a class="quiet-link" href="#experience"><span data-i18n="hero.see">See how it feels</span><span aria-hidden="true">↓</span></a>
-          <a class="quiet-link" href="https://github.com/KevoraLabs/homebrew-tap/releases/download/pause-loop-v1.0/pause-loop-1.0.dmg">Direct download</a>
+          <a class="quiet-link" href="https://github.com/KevoraLabs/homebrew-tap/releases/download/pause-loop-v1.0/pause-loop-1.0.dmg"><span data-i18n="hero.direct">Direct download</span></a>
         </div>
         <p class="requirements" data-i18n="hero.requirements">Native for macOS 14 and later · No account required</p>
-        <p class="requirements">Homebrew: <code>brew install --cask kevoralabs/tap/pause-loop</code></p>
+        <p class="hero-homebrew"><span data-i18n="hero.homebrewLabel">Or install via Homebrew:</span><a href="#install" class="homebrew-inline-link"><code>brew install --cask kevoralabs/tap/pause-loop</code> →</a></p>
       </div>
 
       <div class="shell hero-product reveal">
@@ -136,6 +137,61 @@
         <article class="reveal"><span>◌</span><div><h3 data-i18n="details.away.title">Pauses when you step away</h3><p data-i18n="details.away.body">Optional idle detection keeps the rhythm honest when you leave your Mac.</p></div></article>
         <article class="reveal"><span>♪</span><div><h3 data-i18n="details.sound.title">Sounds that fit the moment</h3><p data-i18n="details.sound.body">Choose and preview separate sounds for the warning, break start, and break end.</p></div></article>
         <article class="reveal"><span>⌂</span><div><h3 data-i18n="details.local.title">Private by design</h3><p data-i18n="details.local.body">Your settings and timing stay on your Mac. There is no account to create.</p></div></article>
+      </div>
+    </section>
+
+    <section class="install-section shell reveal" id="install">
+      <div class="install-card">
+        <div class="install-header">
+          <div class="install-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+            <span data-i18n="install.eyebrow">Terminal & Homebrew</span>
+          </div>
+          <h2 data-i18n="install.title">Install via Homebrew Cask</h2>
+          <p class="install-desc" data-i18n="install.desc">Prefer command line tools? Install and manage PauseLoop effortlessly with Homebrew Cask.</p>
+        </div>
+
+        <div class="install-body">
+          <div class="terminal-box">
+            <div class="terminal-top">
+              <div class="terminal-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="terminal-title">Terminal</span>
+              <button class="copy-btn" data-copy="brew install --cask KevoraLabs/tap/pause-loop" aria-label="Copy command">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span data-i18n="install.copy">Copy command</span>
+              </button>
+            </div>
+            <div class="terminal-code">
+              <span class="prompt">$</span> <code>brew install --cask KevoraLabs/tap/pause-loop</code>
+            </div>
+          </div>
+
+          <div class="install-steps">
+            <div class="install-step">
+              <div class="step-num">1</div>
+              <div>
+                <h3 data-i18n="install.step1.title">One-Line Install</h3>
+                <p data-i18n="install.step1.desc">Run the command above in Terminal. Homebrew will fetch the tap and install PauseLoop.</p>
+              </div>
+            </div>
+            <div class="install-step">
+              <div class="step-num">2</div>
+              <div>
+                <h3 data-i18n="install.step2.title">Keep Updated</h3>
+                <p data-i18n="install.step2.desc">Update to the latest version anytime by running <code class="mini-code">brew upgrade --cask pause-loop</code>.</p>
+              </div>
+            </div>
+            <div class="install-step">
+              <div class="step-num">3</div>
+              <div>
+                <h3 data-i18n="install.step3.title">Alternative Tap First</h3>
+                <p data-i18n="install.step3.desc">Or run <code class="mini-code">brew tap KevoraLabs/tap</code> followed by <code class="mini-code">brew install --cask pause-loop</code>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
