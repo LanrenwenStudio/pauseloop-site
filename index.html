@@ -60,7 +60,7 @@
           <a class="quiet-link" href="https://github.com/KevoraLabs/homebrew-apps/releases/download/pause-loop-v1.0/pause-loop-1.0.dmg"><span data-i18n="hero.direct">Direct download</span></a>
         </div>
         <p class="requirements" data-i18n="hero.requirements">Native for macOS 14 and later · No account required</p>
-        <p class="hero-homebrew"><span data-i18n="hero.homebrewLabel">Or install via Homebrew:</span><a href="#install" class="homebrew-inline-link"><code>brew install --cask kevoralabs/apps/pause-loop</code> →</a></p>
+        <p class="hero-homebrew"><span data-i18n="hero.homebrewLabel">Or install via Homebrew:</span><a href="#install" class="homebrew-inline-link"><code>brew tap KevoraLabs/apps && brew install --cask pause-loop</code> →</a></p>
       </div>
 
       <div class="shell hero-product reveal">
@@ -158,13 +158,14 @@
                 <span></span><span></span><span></span>
               </div>
               <span class="terminal-title">Terminal</span>
-              <button class="copy-btn" data-copy="brew install --cask KevoraLabs/apps/pause-loop" aria-label="Copy command">
+              <button class="copy-btn" data-copy="brew tap KevoraLabs/apps && brew install --cask pause-loop" aria-label="Copy command">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
                 <span data-i18n="install.copy">Copy command</span>
               </button>
             </div>
-            <div class="terminal-code">
-              <span class="prompt">$</span> <code>brew install --cask KevoraLabs/apps/pause-loop</code>
+            <div class="terminal-code" style="display: flex; flex-direction: column; gap: 6px;">
+              <div><span class="prompt">$</span> <code>brew tap KevoraLabs/apps</code></div>
+              <div><span class="prompt">$</span> <code>brew install --cask pause-loop</code></div>
             </div>
           </div>
 
