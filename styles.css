@@ -332,6 +332,20 @@ h2 { margin: 0; font-size: clamp(3.1rem, 6vw, 6rem); }
 .footer { min-height: 110px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--line); }
 .footer > div { display: flex; gap: 16px; align-items: baseline; }
 .footer span { color: var(--ink-soft); font-size: .82rem; }
+.footer-version {
+  display: inline-block;
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  opacity: 0.55;
+  margin-left: 8px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  vertical-align: middle;
+  letter-spacing: 0.03em;
+}
 .footer nav { display: flex; gap: 24px; }
 
 .simple-page {
